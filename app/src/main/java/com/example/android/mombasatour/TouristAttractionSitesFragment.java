@@ -14,9 +14,9 @@ import java.util.ArrayList;
 
 /**
  *
- * create an instance of the historical sites.
+ * create an instance of the stadium fragment.
  */
-public class HistoricalSitesFragment extends Fragment {
+public class TouristAttractionSitesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,13 +29,13 @@ public class HistoricalSitesFragment extends Fragment {
         //Array of numbers
         final ArrayList<WordClass> words = new ArrayList<WordClass>();
         //Assigning words to englishTranslation array
-        words.add(new WordClass("Fort Jesus"));
-        words.add(new WordClass("Mombasa Old Town"));
-        words.add(new WordClass("Mombasa Tusks"));
-        words.add(new WordClass("Bombolulu Workshops"));
-        words.add(new WordClass("Hindu Temples"));
-        words.add(new WordClass("Gede Ruins"));
-        words.add(new WordClass("Kilifi"));
+        words.add(new WordClass("Haller Park"));
+        words.add(new WordClass("Mombasa Marine National Park"));
+        words.add(new WordClass("Mamba Village Centre"));
+        words.add(new WordClass("Mombasa Go-Kart"));
+        words.add(new WordClass("Wasini Island"));
+        words.add(new WordClass("Kisite-Mpunguti Marine National Park"));
+        words.add(new WordClass("Watamu"));
 
         WordClassAdapter itemsAdapter = new WordClassAdapter(getActivity(), words);
 

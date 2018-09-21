@@ -1,7 +1,6 @@
 package com.example.android.mombasatour;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
@@ -29,7 +28,7 @@ public class MainActivityFragmentAdapter extends FragmentPagerAdapter {
         }else if (position == 2){
             return new HotelsFragment();
         }else if (position == 3){
-            return new StadiumFragment();
+            return new TouristAttractionSitesFragment();
         }else return null;
     }
 
@@ -42,7 +41,7 @@ public class MainActivityFragmentAdapter extends FragmentPagerAdapter {
         } else if (position == 2) {
             return mContext.getString(R.string.hotel_fragment);
         } else {
-            return mContext.getString(R.string.stadium_fragment);
+            return mContext.getString(R.string.tourist_attraction_sites_fragment);
         }
     }
 }
