@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mombasa Tour</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beach_fragment">Beach</string>
+    <string name="h_site_fragment">Sites</string>
+    <string name="hotel_fragment">Hotel</string>
+    <string name="stadium_fragment">Stadium</string>
+</resources>
