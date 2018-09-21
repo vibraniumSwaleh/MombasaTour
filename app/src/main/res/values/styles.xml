@@ -10,9 +10,10 @@
 
     <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@color/tab_indicator_color</item>
-        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabIndicatorHeight">3dp</item>
         <item name="tabPaddingStart">12dp</item>
         <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@color/tab_background</item>
         <item name="tabSelectedTextColor">@color/tab_selected_text_color</item>
     </style>
 
