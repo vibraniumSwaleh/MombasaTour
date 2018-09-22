@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class WordClassAdapter extends ArrayAdapter<WordClass> {
+
     private static final String LOG_TAG = WordClassAdapter.class.getSimpleName();
 
     public WordClassAdapter(Activity context, ArrayList<WordClass> numbersName) {
@@ -38,8 +39,11 @@ public class WordClassAdapter extends ArrayAdapter<WordClass> {
 
         WordClass currentPosition = getItem(position);
 
-        TextView messageText = (TextView) listItemView.findViewById(R.id.messageView);
-        messageText.setText(currentPosition.getmMessage());
+        TextView messageText1 = (TextView) listItemView.findViewById(R.id.messageView1);
+        messageText1.setText(currentPosition.getmTitle());
+
+        TextView messageText2 = (TextView) listItemView.findViewById(R.id.messageView2);
+        messageText2.setText(currentPosition.getmBody());
 
         ImageView tourImage = (ImageView) listItemView.findViewById(R.id.image);
         if(currentPosition.hasImage()) {

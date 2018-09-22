@@ -23,19 +23,16 @@ public class TouristAttractionSitesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
-
-
         //Array of numbers
         final ArrayList<WordClass> words = new ArrayList<WordClass>();
         //Assigning words to englishTranslation array
-        words.add(new WordClass("Haller Park"));
-        words.add(new WordClass("Mombasa Marine National Park"));
-        words.add(new WordClass("Mamba Village Centre"));
-        words.add(new WordClass("Mombasa Go-Kart"));
-        words.add(new WordClass("Wasini Island"));
-        words.add(new WordClass("Kisite-Mpunguti Marine National Park"));
-        words.add(new WordClass("Watamu"));
+        words.add(new WordClass("Haller Park",getString(R.string.haller_park_facts),R.drawable.haller_park));
+        words.add(new WordClass("Mombasa Marine National Park",getString(R.string.mombasa_marine_national_park_facts),R.drawable.mombasa_marine_national_park));
+        words.add(new WordClass("Mamba Village Centre",getString(R.string.mamba_village_facts),R.drawable.mamba_village_centre));
+        words.add(new WordClass("Mombasa Go-Kart",getString(R.string.go_kart_facts),R.drawable.mombasa_go_karts));
+        words.add(new WordClass("Wasini Island",getString(R.string.wasini_island_facts),R.drawable.mombasa_wasini_island));
+        words.add(new WordClass("Kisite-Mpunguti Marine National Park",getString(R.string.kisite_facts),R.drawable.mombasa_kisite_mpunguti_marine_national_park));
+        words.add(new WordClass("Watamu",getString(R.string.watamu_facts),R.drawable.mombasa_watamu));
 
         WordClassAdapter itemsAdapter = new WordClassAdapter(getActivity(), words);
 

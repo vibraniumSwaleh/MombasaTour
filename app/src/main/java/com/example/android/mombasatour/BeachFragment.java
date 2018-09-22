@@ -24,18 +24,15 @@ public class BeachFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, container, false);
 
-        /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
-
-
         //Array of numbers
         final ArrayList<WordClass> words = new ArrayList<WordClass>();
         //Assigning words to englishTranslation array
-        words.add(new WordClass("Diani Beach"));
-        words.add(new WordClass("Nyali Beach"));
-        words.add(new WordClass("Bamburi Beach"));
-        words.add(new WordClass("Shanzu Beach"));
-        words.add(new WordClass("Tiwi Beach"));
-        words.add(new WordClass("Copacabana Beach"));
+        words.add(new WordClass("Diani Beach",getString(R.string.diani_beach_facts)));
+        words.add(new WordClass("Nyali Beach",getString(R.string.nyali_beach_facts)));
+        words.add(new WordClass("Bamburi Beach",getString(R.string.bamburi_beach_facts)));
+        words.add(new WordClass("Shanzu Beach",getString(R.string.shanzu_beach_facts)));
+        words.add(new WordClass("Tiwi Beach",getString(R.string.tiwi_beach_facts)));
+        words.add(new WordClass("Copacabana Beach",getString(R.string.copacabana_beach_facts)));
 
         WordClassAdapter itemsAdapter = new WordClassAdapter(getActivity(), words);
 
